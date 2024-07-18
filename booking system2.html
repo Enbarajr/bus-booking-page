@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Star Bus Booking System</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Star Bus Booking</h1>
+        <form id="bookingForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="date">Travel Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="destination">Destination:</label>
+            <select id="destination" required>
+                <option value="">Select Destination</option>
+                <option value="salem">salem</option>
+                <option value="dharmapuri">dharmapuri</option>
+                <option value="krishnagiri">krishnagiri</option>
+            </select>
+
+            <button type="submit">Book Now</button>
+        </form>
+        <div id="confirmationMessage" class="hidden"></div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
